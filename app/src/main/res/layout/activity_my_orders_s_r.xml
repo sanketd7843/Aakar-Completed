@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".display.ShowOrdersSR">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/srorderLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/backbuttonorder"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/grey_40" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginRight="40dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="My Orders"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Filter With City"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Filter With Price"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="Filter With Status"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spn_city11"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner3"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/myOrdersRvSr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

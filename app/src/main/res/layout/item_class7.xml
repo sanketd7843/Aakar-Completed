@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lbl_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Id"
+                android:layout_weight="1"
+                android:textColor="@color/red_pill"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/lbl_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Id"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/lbl_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_weight="1"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/lbl_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order By"
+                android:layout_weight="1"
+                android:textColor="#000"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/lbl_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/lbl_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Now >>"
+                android:layout_weight="1"
+                android:textColor="@color/red_pill"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

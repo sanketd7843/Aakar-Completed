@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gradient="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityBookFinalSP"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="">
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/grey_40" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Book Service Provider"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/containerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_profilePhotoBook"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    app:srcCompat="@drawable/employee" />
+
+                                <TextView
+                                    android:id="@+id/tv_profile_nameBookfinal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="center"
+                                    android:text="Name"
+                                    android:textSize="17dp"
+
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Hourly Rate: "
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp" />
+
+                                    <TextView
+                                        android:id="@+id/hourlyrate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="100"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Daily Rate: "
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp" />
+
+                                    <TextView
+                                        android:id="@+id/dailyRate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2000"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Weekly Rate: "
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp" />
+
+                                    <TextView
+                                        android:id="@+id/weeklyRate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="11,000"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Monthly Rate: "
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp" />
+
+                                    <TextView
+                                        android:id="@+id/monthlyRate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3,20,000"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pan No"
+                                    android:textColor="@color/colorBlackTrans"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/lbl_panno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="------"
+                                    android:textColor="@color/colorBlackTrans"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8.5"
+                        android:background="#11000000"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL PROJECTS"
+                                android:textColor="@color/colorBlackTrans"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/lbl_totalproject"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="15"
+                                android:textColor="@color/colorBlackTrans"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL PAID"
+                                android:textColor="@color/colorBlackTrans"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/lbl_totalpaid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text="2012 INR"
+                                android:textColor="@color/colorBlackTrans"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:background="#000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="40dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:layout_weight="1"
+                                        android:text="Address"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_profile_addressBookfinal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="---"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="40dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:layout_weight="1"
+                                        android:text="Phone Number"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_profile_phnnoBookfinal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="---"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="40dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:layout_weight="1"
+                                        android:text="Email"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_profile_emailBookfinal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="---"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="40dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:layout_weight="1"
+                                        android:text="Qualification"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_profile_educationBookfinal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="---"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="40dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:layout_weight="1"
+                                        android:text="Type Of Service"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_profile_tofBookfinal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="---"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="40dp"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:layout_weight="1"
+                                        android:text="City"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_profile_cityBookfinal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:text="---"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="80dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="bottom"
+                                    android:layout_marginLeft="40dp"
+                                    android:text="Duration"
+                                    android:textColor="@color/colorBlackTrans"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="40dp">
+
+                                    <org.angmarch.views.NiceSpinner
+                                        android:id="@+id/nice_spinner"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_weight="1"
+                                        android:textAlignment="center"
+                                        android:layout_marginRight="16dp"
+                                        app:layout_constraintVertical_bias="0.0" />
+
+                                    <EditText
+                                        android:id="@+id/et_durationTime"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="40dp"
+                                        android:layout_weight="1"
+                                        android:hint="Duration Time"
+                                        android:inputType="number"
+                                        android:textAlignment="center"
+                                        android:textColorHint="@color/colorBlackTrans"
+                                        android:textSize="12dp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="left"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="bottom"
+                                    android:layout_marginLeft="40dp"
+                                    android:text="Enter Details: "
+                                    android:textColor="@color/colorBlackTrans"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:gravity="left"
+                                    android:background="@drawable/dotted_bg"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/et_enterAge"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="40dp"
+                                        android:hint="Enter Age"
+                                        android:inputType="number"
+                                        android:layout_marginLeft="40dp"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp" />
+
+                                    <EditText
+                                        android:id="@+id/et_enterService"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Enter Service"
+                                        android:layout_marginLeft="40dp"
+                                        android:textColor="@color/colorBlackTrans"
+                                        android:textSize="17dp"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.4dp"
+                                android:layout_marginTop="20dp"
+                                android:background="#000" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/lbl_profilestatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="---"
+                                    android:textColor="#000"
+                                    android:textSize="0dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="20dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="20dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Total Rate: "
+                                            android:textColor="@color/colorBlackTrans"
+                                            android:textSize="17dp" />
+
+                                        <TextView
+                                            android:id="@+id/totalRateShow"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="00"
+                                            android:textColor="@color/colorBlackTrans"
+                                            android:textSize="17dp"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+
+                                    <Button
+                                        android:id="@+id/btn_Bookfinal"
+                                        android:layout_width="150dp"
+                                        android:layout_height="35dp"
+                                        android:layout_below="@+id/text_dialog"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/rounded_corner_green1"
+                                        android:gravity="center_vertical|center_horizontal"
+                                        android:text="Book"
+                                        android:textColor="#ffffff" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/bookProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

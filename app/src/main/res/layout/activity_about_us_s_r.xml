@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="">
+
+            <ImageView
+                android:id="@+id/backbuttonsra"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/grey_40"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="About Us"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#000" />
+
+
+        <FrameLayout
+            android:id="@+id/containerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/webViewAboutUS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+            </WebView>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

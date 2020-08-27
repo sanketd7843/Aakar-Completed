@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".display.activityAllServiceProviders">
+
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/allspLoader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/backbuttonorder"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/grey_40" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="All Service Providers"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Filter With City"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Filter With Price"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Filter With Status"
+                android:layout_marginTop="8dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/nice_spinner1sp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner2sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner3sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_marginRight="16dp"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAllSP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

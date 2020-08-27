@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:gradient="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="">
+
+            <ImageView
+                android:id="@+id/bt_menu"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/grey_40"
+                />
+            <TextView
+                android:id="@+id/lbldate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY BILLING"
+                android:textSize="22dp"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#000" />
+
+
+        <FrameLayout
+            android:id="@+id/containerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="25dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bill"
+                        android:layout_gravity="center"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/roundedcornerprimary"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Earning : INR 4000/-"
+                            android:textColor="#fff"
+                            android:textSize="24dp"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="20dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_margin="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:gravity="top|center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="ORDER HISTORY"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="24dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Total Orders : 5"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Completed Orders : 2"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Cancelled Orders : 2"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Today's Earning : INR 2000/-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

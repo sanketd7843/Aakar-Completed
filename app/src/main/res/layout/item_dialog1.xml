@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us Time for booking"
+            android:id="@+id/text_dialog"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Enter Duration"
+                android:gravity="center"
+                android:layout_weight="9"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlackTrans"
+                android:layout_gravity="left"
+                android:textStyle="bold"/>
+
+            <EditText
+            android:id="@+id/txt_totalhrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(In hours up to 9 hours)"
+            android:drawablePadding="5dp"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:maxLength="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Enter Time"
+                android:gravity="center"
+                android:layout_weight="9"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlackTrans"
+                android:layout_gravity="left"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/txt_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter time (ex: 5 PM)"
+                android:drawablePadding="5dp"
+                android:inputType="text"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txt_totalbill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total Bill"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlackTrans"
+                android:layout_gravity="left"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_totalbill_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0 INR"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="23dp"
+                android:textColor="@color/red_pill"
+                android:layout_gravity="left"
+                android:textStyle="bold"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:id="@+id/btn_dialog_timedone"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/text_dialog"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedcornerccc1"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="@color/colorBlackTrans"
+        android:layout_marginTop="10dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Cancel"
+                android:id="@+id/btn_dialog_cancel"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@+id/text_dialog"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/roundedcornerccc1"
+                android:layout_marginRight="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Book"
+        android:id="@+id/btn_dialog"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/text_dialog"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner_green1"
+        android:layout_marginLeft="5dp"/>
+
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

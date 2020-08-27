@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ServiceApplicationforStudents</string>
+    <string name="text1">Book nurse anytime</string>
+    <string name="text2">Book care taker anytime</string>
+    <string name="text3">Save your time and money</string>
+    <string name="tc"> T &amp; C</string>
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>

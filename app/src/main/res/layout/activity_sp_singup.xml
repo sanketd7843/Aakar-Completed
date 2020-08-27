@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activitySignupSP"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_nameSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+
+                <EditText
+                    android:id="@+id/et_MobNoSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_textbox"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+
+
+                <EditText
+                    android:id="@+id/et_PasswordSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+
+                <EditText
+                    android:id="@+id/et_EmailSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+
+
+                <EditText
+                    android:id="@+id/et_HourlyRateSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Hourly Rate"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+                <EditText
+                    android:id="@+id/et_DailyRateSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Daily Rate"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+                <EditText
+                    android:id="@+id/et_WeeklyRateSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Weekly Rate"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+                <EditText
+                    android:id="@+id/et_MonthlyRateSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Monthly Rate"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+
+                <EditText
+                    android:id="@+id/et_qualificationSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Qualification"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:text="About You(eg. Work for old age, no of hour in a day)"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/blue_grey_500"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_typeOfServiceSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/rounded_textbox"
+                    android:ems="10"
+                    android:hint="Type Of Service"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/overlay_dark_90"
+                    android:textColorHint="@color/overlay_dark_50" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:text="Select Gender"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/blue_grey_500"
+                    android:textStyle="bold" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:checked="true"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:id="@+id/radioOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:text="Select City"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/blue_grey_500"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spn_city1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp">
+
+                </Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:text="Select Identity Proof"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/blue_grey_500"
+                    android:textStyle="bold" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/adhaar"
+        android:id="@+id/aadhardummy"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/adhaarImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_menu_camera" />
+
+
+</RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_SignupSpRegister"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_rounded_green_300"
+                    android:gravity="center"
+                    android:text="SIGN UP"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_GotoLoginSpRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Already Registered?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerProgressSp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
