@@ -9,7 +9,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     defaultConfig {
-        applicationId "com.example.aakar"
+        applicationId "com.akar.aakar"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1

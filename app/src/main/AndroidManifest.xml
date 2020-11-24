@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.aakar">
+    package="com.akar.aakar">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -18,90 +18,90 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         >
-        <activity android:name=".activityShareReceiver"
+        <activity android:name="com.akar.aakar.activityShareReceiver"
             android:screenOrientation="portrait"/>
-        <activity android:name=".TransactionSuccessfulActivity"
+        <activity android:name="com.akar.aakar.TransactionSuccessfulActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activityAboutUsSR"
+            android:name="com.akar.aakar.activityAboutUsSR"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityTandCSR"
+            android:name="com.akar.aakar.activityTandCSR"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityEditProfileSR"
+            android:name="com.akar.aakar.activityEditProfileSR"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityEditProfileSP"
+            android:name="com.akar.aakar.activityEditProfileSP"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity_order_notification"
+            android:name="com.akar.aakar.activity_order_notification"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".BookSP"
+            android:name="com.akar.aakar.BookSP"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityBookFinalSP"
+            android:name="com.akar.aakar.activityBookFinalSP"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".display.activityAllServiceProviders"
+            android:name="com.akar.aakar.display.activityAllServiceProviders"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityShare"
+            android:name="com.akar.aakar.activityShare"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitySignUpSR"
+            android:name="com.akar.aakar.activitySignUpSR"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".acctivityTandC"
+            android:name="com.akar.aakar.acctivityTandC"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityAboutUs"
+            android:name="com.akar.aakar.activityAboutUs"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityNotifcationsSR"
+            android:name="com.akar.aakar.activityNotifcationsSR"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityNotifcations"
+            android:name="com.akar.aakar.activityNotifcations"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivityReceiver"
+            android:name="com.akar.aakar.MainActivityReceiver"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ActivityMyOrdersSP"
+            android:name="com.akar.aakar.ActivityMyOrdersSP"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityLoginSP"
+            android:name="com.akar.aakar.activityLoginSP"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityLoginSR"
+            android:name="com.akar.aakar.activityLoginSR"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activtiyHelp"
+            android:name="com.akar.aakar.activtiyHelp"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".display.ShowOrdersSR"
+            android:name="com.akar.aakar.display.ShowOrdersSR"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityLoginOption"
+            android:name="com.akar.aakar.activityLoginOption"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitySignupSP"
+            android:name="com.akar.aakar.activitySignupSP"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityProfile"
+            android:name="com.akar.aakar.activityProfile"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activityProfileSR"
+            android:name="com.akar.aakar.activityProfileSR"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".display.ShowOrdersSP"
+            android:name="com.akar.aakar.display.ShowOrdersSP"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.akar.aakar.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitySplash"
+            android:name="com.akar.aakar.activitySplash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -114,7 +114,7 @@
             android:name="org.apache.http.legacy"
             android:required="false" /> <!-- [START firebase_service] -->
         <service
-            android:name=".utils.MyFirebaseMessagingService"
+            android:name="com.akar.aakar.utils.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
