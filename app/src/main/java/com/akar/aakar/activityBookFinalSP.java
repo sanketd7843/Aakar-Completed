@@ -23,7 +23,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.akar.aakar.display.activityAllServiceProviders;
 import com.akar.aakar.models.Datum;
 import com.akar.aakar.models.LoginApi;
 import com.akar.aakar.utils.Constants;
@@ -123,14 +122,6 @@ public class activityBookFinalSP extends AppCompatActivity {
             }
         });
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(activityBookFinalSP.this, activityAllServiceProviders.class);
-                startActivity(i);
-                finish();
-            }
-        });
         //on text change
         durationTime.addTextChangedListener(new TextWatcher() {
 
@@ -167,14 +158,6 @@ public class activityBookFinalSP extends AppCompatActivity {
 
     }
 
-    public void onBackPressed() {
-        Integer backpress = 0;
-        backpress = (backpress + 1);
-        Intent i = new Intent(activityBookFinalSP.this, activityAllServiceProviders.class);
-        startActivity(i);
-        finish();
-
-    }
 
 
     private void bookSp() {

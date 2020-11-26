@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.akar.aakar.display.activityAllServiceProviders;
-
 public class BookSP extends AppCompatActivity {
 
     @Override
@@ -36,14 +34,6 @@ public class BookSP extends AppCompatActivity {
             }
         });
     }
-    @Override
-    public void onBackPressed(){
-        Intent i = new Intent(BookSP.this, activityAllServiceProviders.class);
-        startActivity(i);
-        finish();
-
-    }
-
 
 
 }

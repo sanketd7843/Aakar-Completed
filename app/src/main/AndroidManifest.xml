@@ -44,9 +44,6 @@
             android:name="com.akar.aakar.activityBookFinalSP"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.akar.aakar.display.activityAllServiceProviders"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.akar.aakar.activityShare"
             android:screenOrientation="portrait" />
         <activity
