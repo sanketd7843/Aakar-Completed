@@ -37,9 +37,96 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:919817599848:android:a9c92a9360cf1c2e19f4dd",
+        "android_client_info": {
+          "package_name": "com.akar.aakar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919817599848-hub8s4sdq9jch5ongjtasbi9kar5ijp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjPknmw7ZECOTjhu4DdVrZX9j7g8cY3QE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919817599848-hub8s4sdq9jch5ongjtasbi9kar5ijp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:919817599848:android:aa73765d9b9bceb919f4dd",
         "android_client_info": {
           "package_name": "com.example.aakar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919817599848-hub8s4sdq9jch5ongjtasbi9kar5ijp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjPknmw7ZECOTjhu4DdVrZX9j7g8cY3QE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919817599848-hub8s4sdq9jch5ongjtasbi9kar5ijp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919817599848:android:f6e6f4f8eca4ccfd19f4dd",
+        "android_client_info": {
+          "package_name": "com.test.androidecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919817599848-hub8s4sdq9jch5ongjtasbi9kar5ijp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjPknmw7ZECOTjhu4DdVrZX9j7g8cY3QE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919817599848-hub8s4sdq9jch5ongjtasbi9kar5ijp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919817599848:android:3a63e0655eb5de3419f4dd",
+        "android_client_info": {
+          "package_name": "com.videoz.app"
         }
       },
       "oauth_client": [
