@@ -15,9 +15,10 @@
 
         <ImageView
             android:id="@+id/image_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo" />
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo_main_m" />
 
         <TextView
             android:layout_width="match_parent"

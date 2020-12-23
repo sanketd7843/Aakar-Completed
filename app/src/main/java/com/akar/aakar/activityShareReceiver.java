@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.akar.aakar.utils.Constants;
+import com.android.volley.BuildConfig;
+
 public class activityShareReceiver extends AppCompatActivity {
 
     @Override
@@ -22,7 +25,7 @@ public class activityShareReceiver extends AppCompatActivity {
                 shareIntent.setType("text/plain");
                 shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My Care");
                 String shareMessage = "\nLet me recommend you this application\n\n";
-                shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
+                shareMessage = shareMessage + Constants.share_url + "\n\n";
                 shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
                 startActivity(Intent.createChooser(shareIntent, "choose one"));
             } catch (Exception e) {
