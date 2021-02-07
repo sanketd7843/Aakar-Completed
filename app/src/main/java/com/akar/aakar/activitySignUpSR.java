@@ -102,10 +102,7 @@ public class activitySignUpSR extends AppCompatActivity {
                 finish();
             }
         });
-
-
     }
-
 
     private void GetCitiesApi() {
 

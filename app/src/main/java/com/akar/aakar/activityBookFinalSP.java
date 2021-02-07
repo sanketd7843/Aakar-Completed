@@ -17,6 +17,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.akar.aakar.display.ShowOrdersSP;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -40,7 +41,6 @@ import java.util.List;
 import java.util.Map;
 
 public class activityBookFinalSP extends AppCompatActivity {
-    String[] country = {"India", "USA", "China", "Japan", "Other"};
 
     public static String get_name = "";
     public static String get_address = "";
@@ -76,7 +76,16 @@ public class activityBookFinalSP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_final_s_p);
         _appPrefs = new SharedHelper(getApplicationContext());
+        ImageView btnback = findViewById(R.id.backbutton);
 
+        btnback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(activityBookFinalSP.this, MainActivityReceiver.class);
+                startActivity(i);
+                finish();
+            }
+        });
         net_amount = getGet_hourlyrate;
         Log.e( "onCreate: ", net_amount+" here is the value");
 

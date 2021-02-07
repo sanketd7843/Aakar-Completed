@@ -13,6 +13,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.akar.aakar.display.ShowOrdersSR;
+import com.akar.aakar.display.activityAllServiceProviders;
 
 public class MainActivityReceiver extends AppCompatActivity {
 
@@ -54,7 +55,7 @@ public class MainActivityReceiver extends AppCompatActivity {
         serviceProvides.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivityReceiver.this, activityBookFinalSP.class);
+                Intent i = new Intent(MainActivityReceiver.this, activityAllServiceProviders.class);
                 startActivity(i);
                 finish();
             }

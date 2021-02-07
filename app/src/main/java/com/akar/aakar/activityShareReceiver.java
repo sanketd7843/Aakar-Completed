@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.akar.aakar.utils.Constants;
-import com.android.volley.BuildConfig;
 
 public class activityShareReceiver extends AppCompatActivity {
 

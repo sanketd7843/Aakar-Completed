@@ -95,6 +95,9 @@
             android:name="com.akar.aakar.display.ShowOrdersSP"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.akar.aakar.display.activityAllServiceProviders"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.akar.aakar.MainActivity"
             android:screenOrientation="portrait" />
         <activity

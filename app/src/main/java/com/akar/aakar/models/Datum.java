@@ -15,7 +15,7 @@ public class Datum {
     private String fullName;
     @SerializedName("mobile_no")
     @Expose
-    private Integer mobileNo;
+    private String mobileNo;
     @SerializedName("password")
     @Expose
     private String password;
@@ -81,11 +81,11 @@ public class Datum {
         this.fullName = fullName;
     }
 
-    public Integer getMobileNo() {
+    public String getMobileNo() {
         return mobileNo;
     }
 
-    public void setMobileNo(Integer mobileNo) {
+    public void setMobileNo(String mobileNo) {
         this.mobileNo = mobileNo;
     }
 
